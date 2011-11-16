@@ -1,0 +1,12 @@
+<?php
+
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function add_store_display_type_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['store_display_type'] = array(
+    'label' => t('Store Display'),
+    'custom settings' => TRUE,
+  );
+} 
